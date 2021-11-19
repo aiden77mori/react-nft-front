@@ -1,0 +1,509 @@
+.features-split3 {
+
+	// background-color: white;
+
+	margin-top: 20px;
+	// margin-bottom: -230px;
+
+	.section-inner {
+		padding-top: $features-split--padding-t__mobile;
+		padding-bottom: $features-split--padding-b__mobile;
+	}
+	
+	.collection-feature {
+		margin-top: -80px;
+	}
+
+	.section-header-collection-create {
+		// padding-bottom: $features-split-header--padding__mobile;
+		padding-bottom: 40px;
+	}
+
+	.container-xs-custom-1 {
+		span {
+			color: red;
+			font-size: 19px;
+		}
+	}
+
+
+	.tiles-item-inner-collection-create {
+		padding-top: $testimonial-item--inner-padding-v;
+		padding-bottom: $testimonial-item--inner-padding-v;
+		padding-left: $testimonial-item--inner-padding-h;
+		padding-right: $testimonial-item--inner-padding-h;
+		justify-content: space-around;
+		margin-top: 30px;
+
+
+		.features-tiles-item-content-collection-feature {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+
+			.main_right_top_explore_feature {
+				text-align: left;
+				color: red;
+				font-size: 16px;
+
+				.see_more {
+					border: 1px solid red;
+					color: red;
+					background: transparent;
+					font-weight: bold;
+					padding: 10px 40px 10px 40px;
+					width: 170px;
+				}
+			}
+		}
+	}
+
+	.edit-profile {
+		display: flex;
+		flex-direction: column;
+		width: 330px;
+
+		.small_info {
+			color: red;
+			font-size: 10px;
+			padding-left: 175px;
+		}
+		
+		input {
+			background: black;
+			border: none;
+			border-bottom: 1px solid rgb(255, 0, 0);
+			color: red;
+			padding-top: 15px;
+			padding-bottom: 10px;
+		}
+
+		::placeholder {
+			color: red;
+			font-size: 13px;
+		}
+
+		.file_choose_coll_create {
+			color: red;
+			font-size: 13px;
+			padding-top: 30px;
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+
+			input {
+				width: 47%;
+				background: red;
+				padding-left: 20px;
+				padding-top: 7px;
+				padding-bottom: 5px;
+				color: black;
+				
+			}
+			::placeholder {
+				color: black;
+			}
+		}
+
+		.radio_group {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 90%;
+			color: red;
+			font-size: 13px;
+			padding-top: 30px;
+
+			.radio_btn {
+				width: 120px;
+				display: flex;
+				align-items: center;
+			
+				input[type="radio"] {
+					/* remove standard background appearance */
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					appearance: none;
+					/* create custom radiobutton appearance */
+					display: inline-block;
+					padding: 2px;
+					/* background-color only for content */
+					background-clip: content-box;
+					border: 1px solid red;
+					background-color: black;
+					border-radius: 50%;
+					width: 20px;
+					height: 20px;
+					margin-left: 15px;
+				}
+				
+				/* appearance for checked radiobutton */
+				input[type="radio"]:checked {
+					background-color: #ff0000;
+				}
+				
+			}
+		}
+
+		.radio_desc_group {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			
+			input {
+				width: 40%;
+			}
+		}
+
+	}
+
+	.features-tiles-item-content-collection-create {
+
+		.main_right_top_collection_create {
+			display: flex;
+			flex-direction: row;			
+			align-items: center;
+			justify-content: space-between;
+			text-align: left;
+			width: 470px;
+			color: red;
+			font-size: 16px;
+			margin-left: -32px;
+			
+			.create_collection_btn {
+				border: 1px solid red;
+				color: black;
+				background: red;
+				font-weight: bold;
+				padding: 10px 40px 10px 40px;
+				width: 210px;
+			}
+
+			.cancel_collection_btn {
+				border: 1px solid red;
+				color: red;
+				background: transparent;
+				font-weight: bold;
+				padding: 10px 40px 10px 40px;
+				width: 210px;
+			}
+
+		}
+	}
+}
+
+
+.nft-details_explore_feature_split {
+	color: inherit;
+	
+  }
+  
+  .nft-details_explore_feature_split h2 {
+	font-size: 19px;
+	font-weight: bold;
+	color:red !important;
+	line-height: 10px !important;
+  }
+  
+  .nft-details_explore_feature_split div {
+	font-size: 14px;
+	// color: inherit;
+	color:red !important;
+	margin-top: -25px;
+  }
+  
+
+
+// .most-upper {
+// 	color: red;
+// 	width: 100%;
+// 	min-width: 370px;
+// 	width: 590px !important;
+// }
+// .share {
+// 	float: right;
+// 	// margin-right: 20px;
+// }
+// .share ul {
+// 	margin: 0;
+// 	padding: 0;
+// 	margin-left: 10px;
+// 	padding-top: 10px !important;
+// }
+
+// .share ul li {
+// 	display: inline-block;
+// 	width: 8px;
+// 	height: 8px;
+// 	background: red;
+// 	border-radius: 50%;
+// 	margin-left: 5px;
+// }
+
+
+
+.most-detail-collection {
+	
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	padding-top: -20px;
+	margin-left: 50px;
+
+	.astro_title_collection_preview {
+		font-size: 18px;
+		color:red;
+		margin-top: -35px;
+	}
+}
+
+.right-cnt-collection-create {
+	display: flex;
+	justify-content: space-evenly;
+	border: 1px dashed red;
+	width: 330px;
+	height: 440px;
+	margin-top: 10px;
+}
+
+.right-cnt {
+    margin-top: 40px;
+}
+
+.most-detail-collection a {
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+	// text-decoration: underline;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.right-cnt img {
+	width: 90px !important;
+	margin-top: 24px;
+  }
+  .right-cnt h2 {
+	color: red;
+	font-size: 142px;
+	margin: 0;
+	text-decoration: none;
+  }
+  
+  .small-images img {
+	  width: 26px !important;
+	  display: inline-block;
+	  margin: 0px -3px;
+	  margin-top: 10px;
+  }
+  
+  .right-cnt-collection p {
+	  color: red;
+	  font-weight: 700;
+	  font-size: 14px;
+	  margin: 0;
+  }
+  .right-cnt-collection h5 {
+	  font-size: 14px;
+	  color: red;
+	  font-weight: 700;
+  }
+  .right-cnt-collection a {
+	  color: red;
+	  font-size: 17px;
+	  font-weight: bold;
+  }
+
+  .split-item-image-collection {
+	min-width: 494px !important;
+  }
+
+@include media ( '<medium' ) {
+	.split-item-image {
+		min-width:275px !important;
+	  }
+
+	  .features-split3 {
+		.features-tiles-item-content-collection-create {
+			.main_right_top_collection_create {
+
+				flex-direction: column;		
+				width: 100%;	
+				margin-left: 0.5px;
+
+			  }
+		}
+
+		.collection-create {
+			width: 100%;
+		}
+	}
+
+	.edit-profile-up {
+		width: 100%;
+	}
+
+	.edit-profile {
+		display: flex;
+		flex-direction: column;
+		width: 100% !important;
+	}	  
+	  
+}
+
+@include media ( '<spec_medium') {
+	.split-item {
+		// padding-top: $split-item--padding-v__desktop / 2;
+		// padding-bottom: $split-item--padding-v__desktop / 2;
+		display: flex !important;
+		flex-direction: column !important;
+		flex-wrap: nowrap !important;
+		align-items: center !important;
+		justify-content: flex-start;
+	}
+
+	.most-detail-collection {
+		margin-top: 50px;
+	}
+
+	.edit-profile {
+		display: flex;
+		flex-direction: column;
+		width: 470px;
+
+		.small_info {
+			color: red;
+			font-size: 10px;
+			padding-left: 250px !important;
+		}
+		
+		input {
+			background: black;
+			border: none;
+			border-bottom: 1px solid rgb(255, 0, 0);
+			color: red;
+			padding-top: 15px;
+			padding-bottom: 10px;
+		}
+
+		::placeholder {
+			color: red;
+			font-size: 13px;
+		}
+
+		.file_choose_coll_create {
+			color: red;
+			font-size: 13px;
+			padding-top: 30px;
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+
+			input {
+				width: 47%;
+				background: red;
+				padding-left: 20px;
+				padding-top: 7px;
+				padding-bottom: 5px;
+				color: black;
+				
+			}
+			::placeholder {
+				color: black;
+			}
+		}
+
+		.radio_group {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 90%;
+			color: red;
+			font-size: 13px;
+			padding-top: 30px;
+
+			.radio_btn {
+				width: 120px;
+				display: flex;
+				align-items: center;
+			
+				input[type="radio"] {
+					/* remove standard background appearance */
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					appearance: none;
+					/* create custom radiobutton appearance */
+					display: inline-block;
+					padding: 2px;
+					/* background-color only for content */
+					background-clip: content-box;
+					border: 1px solid red;
+					background-color: black;
+					border-radius: 50%;
+					width: 20px;
+					height: 20px;
+					margin-left: 15px;
+				}
+				
+				/* appearance for checked radiobutton */
+				input[type="radio"]:checked {
+					background-color: #ff0000;
+				}
+				
+			}
+		}
+
+		.radio_desc_group {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			
+			input {
+				width: 40%;
+			}
+		}
+
+	}
+}
+
+@include media( '>spec_medium' ) {
+
+	.features-split3 {
+
+		.section-inner {
+			padding-top: $features-split--padding-t__desktop;
+			padding-bottom: $features-split--padding-b__desktop;
+			
+		}
+
+		.collection-feature {
+			margin-top: -80px;
+		}
+
+		.section-header {
+			padding-bottom: $features-split-header--padding__desktop;
+		}
+	}
+
+	.collection_feature_split_create {
+		margin-top: -90px;
+		display: flex !important;
+		flex-direction: row !important;
+		align-items: flex-start !important;
+
+
+
+		img {
+			height: 500px;
+		}
+
+		.split-item-content {
+			width: 430px !important;
+		}
+	}
+
+	.features-split-inner3 {
+		padding-left: 70px;
+	}
+}

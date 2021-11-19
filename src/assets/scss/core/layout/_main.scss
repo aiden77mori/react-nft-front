@@ -1,0 +1,62 @@
+.is-boxed {
+    background: color-bg(body-outer);
+
+	.body-wrap {
+		max-width: $container--width-boxed;
+	    margin: 0 auto;
+	    box-shadow: color-bg(body-shadow);
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: color-bg(body);
+			z-index: -10;
+		}
+	}
+}
+
+.body-wrap {
+	position: relative;
+    overflow: hidden;
+    // Sticky footer
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-content {
+    flex: 1 0 auto;
+	background: black;
+}
+
+.main_right_top {
+	text-align: left;
+	color:red;
+	margin-top:10px;
+	font-size: 16px;
+}
+
+.main_right_middle {
+	text-align: left;
+	font-weight: 900;
+	font-size: 35px;
+	color:red;
+	margin-top:30px;
+}
+
+.bid {
+	margin-top:20px;
+	font-size:12px;
+	border:1px solid red;
+	color:red;
+	background:transparent;
+	font-weight: bold;
+	padding:10px 40px 10px 40px;
+}
+
+
+

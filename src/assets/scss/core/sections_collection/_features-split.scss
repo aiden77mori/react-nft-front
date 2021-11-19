@@ -1,0 +1,254 @@
+.features-split2 {
+
+	// background-color: white;
+
+	margin-top: 130px;
+	margin-bottom: -230px;
+
+	.section-inner {
+		padding-top: $features-split--padding-t__mobile;
+		padding-bottom: $features-split--padding-b__mobile;
+	}
+	
+	.collection-feature {
+		margin-top: -80px;
+		// padding: 70px;
+	}
+
+	.section-header {
+		padding-bottom: $features-split-header--padding__mobile;
+	}
+
+	.container-xs-custom-1 {
+		u {
+			color: red;
+		}
+	}
+
+
+	.tiles-item-inner {
+		padding-top: $testimonial-item--inner-padding-v;
+		padding-bottom: $testimonial-item--inner-padding-v;
+		padding-left: $testimonial-item--inner-padding-h;
+		padding-right: $testimonial-item--inner-padding-h;
+		justify-content: space-around;
+		margin-top: -60px;
+
+
+		.features-tiles-item-content-collection-feature {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+
+			.main_right_top_explore_feature {
+				text-align: left;
+				color: red;
+				font-size: 16px;
+
+				.see_more {
+					border: 1px solid red;
+					color: red;
+					background: transparent;
+					font-weight: bold;
+					padding: 10px 40px 10px 40px;
+					width: 170px;
+				}
+			}
+		}
+	}
+
+	// margin-bottom: 150px;
+}
+
+
+.nft-details_explore_feature_split {
+	color: inherit;
+	
+  }
+  
+  .nft-details_explore_feature_split h2 {
+	font-size: 19px;
+	font-weight: bold;
+	color:red !important;
+	line-height: 10px !important;
+  }
+  
+  .nft-details_explore_feature_split div {
+	font-size: 14px;
+	// color: inherit;
+	color:red !important;
+	margin-top: -25px;
+  }
+  
+
+
+// .most-upper {
+// 	color: red;
+// 	width: 100%;
+// 	min-width: 370px;
+// 	width: 590px !important;
+// }
+// .share {
+// 	float: right;
+// 	// margin-right: 20px;
+// }
+// .share ul {
+// 	margin: 0;
+// 	padding: 0;
+// 	margin-left: 10px;
+// 	padding-top: 10px !important;
+// }
+
+// .share ul li {
+// 	display: inline-block;
+// 	width: 8px;
+// 	height: 8px;
+// 	background: red;
+// 	border-radius: 50%;
+// 	margin-left: 5px;
+// }
+
+.astro_title_collection {
+	font-size: 70px;
+	color:red;
+	padding-top:90px;
+	height:150px;
+}
+
+.astro_text_collection {
+	font-size: 16px;
+	color:red;
+	margin-bottom: 50px;
+}
+
+// .astro_text_1_explore {
+// 	font-size: 14px;
+// 	color:red;
+	
+// }
+
+
+.most-detail-collection-one {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-evenly
+}
+
+.right-cnt {
+    margin-top: 40px;
+}
+
+.most-detail-collection-one a {
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+	// text-decoration: underline;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.right-cnt img {
+	width: 90px !important;
+	margin-top: 24px;
+  }
+  .right-cnt h2 {
+	color: red;
+	font-size: 142px;
+	margin: 0;
+	text-decoration: none;
+  }
+  
+  .small-images img {
+	  width: 26px !important;
+	  display: inline-block;
+	  margin: 0px -3px;
+	  margin-top: 10px;
+  }
+  
+  .right-cnt-collection p {
+	  color: red;
+	  font-weight: 700;
+	  font-size: 14px;
+	  margin: 0;
+  }
+  .right-cnt-collection h5 {
+	  font-size: 14px;
+	  color: red;
+	  font-weight: 700;
+  }
+  .right-cnt-collection a {
+	  color: red;
+	  font-size: 17px;
+	  font-weight: bold;
+  }
+
+  .split-item-image-collection {
+	min-width: 494px !important;
+  }
+
+@include media ( '<medium' ) {
+	.split-item-image {
+		min-width:275px !important;
+	  }
+
+	.right-cnt-collection {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		align-content: space-between;
+
+		P {
+			text-align: left;
+			font-size: 14px;
+		}
+	}
+}
+
+@include media ( '<spec_medium') {
+	.split-item {
+		// padding-top: $split-item--padding-v__desktop / 2;
+		// padding-bottom: $split-item--padding-v__desktop / 2;
+		display: flex !important;
+		flex-direction: column !important;
+		flex-wrap: nowrap !important;
+		align-items: center !important;
+		justify-content: flex-start;
+	}
+}
+
+@include media( '>medium' ) {
+
+	.features-split2 {
+
+		.section-inner {
+			padding-top: $features-split--padding-t__desktop;
+			padding-bottom: $features-split--padding-b__desktop;
+			
+		}
+
+		.collection-feature {
+			margin-top: -80px;
+		}
+
+		.section-header {
+			padding-bottom: $features-split-header--padding__desktop;
+		}
+	}
+
+	.collection_feature_split {
+		margin-top: -90px;
+
+		img {
+			height: 500px;
+		}
+
+		.split-item-content {
+			width: 430px !important;
+		}
+	}
+
+	.features-split-inner {
+		padding-left: 45px;
+	}
+}

@@ -1,0 +1,709 @@
+
+@font-face {
+    font-family: 'Menlo';
+    src: url(../../../../assets/Menlo-Regular.ttf) format('truetype');
+}
+
+.site-header {
+	position: absolute !important;
+	top: 0;
+	width: 100%;
+	z-index: 10 !important;
+	background: color-bg(header);
+
+	+ .site-content {
+
+		.section:first-of-type {
+			padding-top: $header-height__mobile;
+		}
+	}
+
+	.brand {
+		margin-right: $header-nav--padding-h;
+	}	
+}
+
+
+.site-header-inner {
+	max-width: 100%;
+	height: $header-height__mobile;
+	border-bottom: 0.25pt solid #270000;
+}
+
+
+@include media (">header_size") {
+	.header-nav {
+		flex-grow: 1;
+	
+			i.fa {
+				display: inline-block;
+				position: absolute;
+				left: 20px;
+				top: 7px;
+				z-index: 9;
+				cursor: pointer;
+				color: #000000;
+				font-size: 20px;
+			}
+	
+			.header-search-bar {
+				background: #580000;
+				color: #000000;
+				border: none;
+				text-align: left;
+				display: block;
+				padding: 8px 4px 8px 55px;
+				outline: none;
+				font-family: menlo;
+				width: 100%;
+				font-weight: 400;
+				font-size: 14px;
+			}
+		//   }
+		
+	
+		.header-nav-inner {
+			flex-grow: 1;
+	
+			.div-ul {
+				display: flex;
+				align-items: baseline;
+				justify-content: space-between;
+				flex-grow: 1;
+				white-space: nowrap;
+				margin-bottom: 0;
+				margin-top: 21px;
+		
+				&:first-of-type {
+					flex-wrap: wrap;
+				}
+		
+				.header_first_group {
+					display: flex; 
+					flex-direction: row;
+					width: 50%;
+					align-items: center;
+					justify-content: space-between;
+				}
+		
+		
+				.header_second_group {
+					display: flex;
+					flex-direction: row;
+					width: 45%;
+					align-items: center;
+					justify-content: space-between;
+		
+					.div-li {
+						list-style: none;
+						+ .header-button {
+							margin-left: $header-nav--padding-h;
+						}
+						// width: 117.73px;
+					}
+
+					.active {
+						// color: yellow;
+						border: 1px solid red;
+					}
+
+					
+					a:not(.connect_wallet) {
+						font-family: menlo;
+						// color: yellow !important;
+						text-align: center;
+						// border: 1px solid black;
+						// padding: 5px;
+						// padding: 2px 40px 2px 40px;
+		
+						display: block;
+						@include anchor-aspect(header);
+						@include font-weight(header-link);
+						text-transform: $link-header--transform;
+						// padding: 0 $header-nav--padding-h;
+				
+						.invert-color & {
+							@include anchor-aspect(header, inverse);
+						}
+						font-size: 15px;
+						color: red;
+						width: 90px;
+			
+					}
+			
+					.div-li:active {
+						font-family: menlo;
+						// color: yellow !important;
+						text-align: center;
+						border: 1px solid red;
+						// padding: 5px;
+						// padding: 2px 40px 2px 40px;
+					}
+
+					.last_two_btn {
+						display: flex;
+						align-items: center;
+
+						.mint_header {
+							text-align: center;
+							// border: 1px solid red;
+							// padding: 5px;
+							// padding: 2px 40px 2px 40px;
+						}
+				
+						.connect-wallet {
+							font-size: 12px;
+							background: red;
+							font-weight: bold;
+							padding: 2px 40px 2px 40px;
+							text-align: center;
+							margin-left: 10px;
+							width: 205.03px;
+							height: 30px;
+				
+							.connect-wallet-label {
+								color: black;
+							}
+						}
+					}
+			
+			
+					
+				}
+		
+		
+				
+			}
+	
+			
+		}
+	
+		
+	}
+	
+}
+
+@include media ( "<header_size") {
+
+	.header-nav {
+		flex-grow: 1;
+	
+			i.fa {
+				display: inline-block;
+				position: absolute;
+				left: 20px;
+				top: 7px;
+				z-index: 9;
+				cursor: pointer;
+				color: #000000;
+				font-size: 20px;
+			}
+	
+			.header-search-bar {
+				background: #580000;
+				color: #000000;
+				border: none;
+				text-align: left;
+				display: block;
+				padding: 8px 4px 8px 55px;
+				outline: none;
+				font-family: menlo;
+				width: 100%;
+				font-weight: 400;
+				font-size: 14px;
+			}
+		//   }
+		
+	
+		.header-nav-inner {
+			flex-grow: 1;
+
+			.top-navbar {
+				height: 95px;
+			}
+
+			.div-ul {
+				display: flex;
+				align-items: baseline;
+				justify-content: space-between;
+				flex-grow: 1;
+				white-space: nowrap;
+				margin-bottom: 0;
+				margin-top: 21px;
+		
+				&:first-of-type {
+					flex-wrap: wrap;
+				}
+		
+				.header_first_group {
+					display: flex; 
+					flex-direction: row;
+					// width: 50%;
+					// align-items: center;
+					// justify-content: space-between;
+
+					// display: flex;
+					// flex-direction: row;
+					width: 100%;
+					align-items: center;
+					justify-content: space-between;
+
+					.search-bar-li {
+						width: 90% !important;
+						.search-bar {
+							position: relative;
+							height: 30px;
+							width: 100%;
+						}
+					}
+				}
+		
+		
+				.header_second_group {
+					display: flex;
+					flex-direction: row;
+					// width: 45%;
+					// align-items: center;
+					// justify-content: space-between;
+
+					width: 100%;
+					align-items: center;
+					justify-content: space-evenly;
+
+					// .div-li {
+					// 	width: 145px;
+					// }
+		
+					// .div-li {
+					// 	list-style: none;
+					// 	+ .header-button {
+					// 		margin-left: $header-nav--padding-h;
+					// 	}
+					// 	// width: 117.73px;
+					// }
+
+					.active {
+						// color: yellow;
+						border: 1px solid red;
+					}
+
+					
+					a:not(.connect_wallet) {
+						font-family: menlo;
+						// color: yellow !important;
+						text-align: center;
+						// border: 1px solid black;
+						// padding: 5px;
+						// padding: 2px 40px 2px 40px;
+		
+						display: block;
+						@include anchor-aspect(header);
+						@include font-weight(header-link);
+						text-transform: $link-header--transform;
+						// padding: 0 $header-nav--padding-h;
+				
+						.invert-color & {
+							@include anchor-aspect(header, inverse);
+						}
+						font-size: 15px;
+						color: red;
+						width: 90px;
+			
+					}
+			
+					.div-li:active {
+						font-family: menlo;
+						// color: yellow !important;
+						text-align: center;
+						border: 1px solid red;
+						// padding: 5px;
+						// padding: 2px 40px 2px 40px;
+					}
+
+					.last_two_btn {
+						display: flex;
+						align-items: center;
+
+						.mint_header {
+							text-align: center;
+							// border: 1px solid red;
+							// padding: 5px;
+							// padding: 2px 40px 2px 40px;
+						}
+				
+						.connect-wallet {
+							font-size: 12px;
+							background: red;
+							font-weight: bold;
+							padding: 2px 40px 2px 40px;
+							text-align: center;
+							margin-left: 10px;
+							width: 205.03px;
+							height: 30px;
+				
+							.connect-wallet-label {
+								color: black;
+							}
+						}
+					}
+			
+				}
+		
+		
+				
+			}
+
+
+		// 	.header_first_group {
+		// 		display: flex;
+		// 		flex-direction: row;
+		// 		width: 100%;
+		// 		align-items: center;
+		// 		justify-content: space-between;
+
+		// 		.search-bar-li {
+		// 			width: 90% !important;
+		// 			.search-bar {
+		// 				position: relative;
+		// 				height: 30px;
+		// 				width: 100%;
+		// 			}
+		// 		}
+	
+		// 	}
+
+
+		// 	.header_second_group {
+		// 		display: flex;
+		// 		flex-direction: row;
+		// 		width: 100%;
+		// 		align-items: center;
+		// 		justify-content: center;
+
+		// 		.div-li {
+		// 			width: 145px;
+		// 		}
+		// 	}
+
+		// 	.last_two_btn {
+		// 		display: flex;
+		// 	}
+		// }
+	
+		// .div-ul {
+		// 	display: flex;
+		// 	flex-direction: column;
+		// 	align-items: baseline;
+		// 	justify-content: space-between;
+		// 	flex-grow: 0;
+		// 	white-space: nowrap;
+		// 	margin-bottom: 0;
+		// 	margin-top: 21px;
+
+		// 	.div-li {
+		// 		list-style: none;
+		// 		+ .header-button {
+		// 			margin-left: $header-nav--padding-h;
+		// 		}
+		// 	}
+		
+		// 	a:not(.connect_wallet) {
+		// 		display: block;
+		// 		@include anchor-aspect(header);
+		// 		@include font-weight(header-link);
+		// 		text-transform: $link-header--transform;
+		
+		// 		.invert-color & {
+		// 			@include anchor-aspect(header, inverse);
+		// 		}
+		// 		font-size: 15px;
+		// 		color: red;
+		// 	}
+		
+		// 	a.connect_wallet {
+		// 		color: black;
+		// 	}
+
+		// 	&:first-of-type {
+		// 		flex-wrap: wrap;
+		// 	}
+	
+		// 	a {
+		// 		font-family: menlo;
+		// 	}
+
+		// 	.active {
+		// 		// color: yellow;
+		// 		border: 1px solid red;
+		// 	}
+	
+		// 	.mint_header {
+		// 		text-align: center !important;
+		// 		border: 1px solid red;
+		// 		padding: 2px 40px 2px 40px;
+		// 	}
+	
+		// 	.connect-wallet {
+		// 		font-size: 8px;
+		// 		background: red;
+		// 		font-weight: bold;
+		// 		padding: 4px 40px 3px 10px;
+		// 		text-align: center;
+		// 		margin-left: 10px;
+	
+		// 		.connect-wallet-label {
+		// 			color: black;
+		// 		}
+		// 	}
+		// }
+		}
+		
+	}
+}
+
+
+.header-nav-center:first-of-type {
+	flex-grow: 1;
+	justify-content: flex-end;
+}
+
+.header-nav-right {
+	justify-content: flex-end;
+
+	+ .header-nav-right {
+		flex-grow: 0;
+	}
+}
+
+.header-nav-toggle {
+	display: none;
+}
+
+
+
+.a,.h,.j{fill:none;}
+.a,.h{stroke:red;}
+.a{stroke-width:0.5px;}
+.b{fill:#580000;}
+.c{font-size:18px;font-family:Menlo-Regular, Menlo;}
+.d,.f{fill:red;}
+.d,.g{font-size:20px;font-family:Menlo-Bold, Menlo;font-weight:700;}
+.e{fill:#7b0000;}.i{stroke:none;}
+             
+
+@include media('>medium') {
+
+	.site-header {
+
+		+ .site-content {
+
+			.section:first-of-type {
+				padding-top: $header-height__desktop;
+			}
+		}
+	}
+
+	.site-header-inner {
+		// height: $header-height__desktop;
+		height: 45px;
+
+		border-bottom: 0.25pt solid #270000;
+	}
+
+	.search-bar {
+		position: relative;
+		height: 30px;
+		width: 448px;
+	}
+	
+}
+
+
+
+
+@include media( '<=medium' ) {
+	
+	.site-header-inner {
+		display: flex;
+    	justify-content: flex-end;
+	}
+
+	.header-nav-toggle {
+		display: block;
+
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		// Header navigation when the hamburger is a previous sibling
+		+ .header-nav {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 100%;
+			z-index: 9999;
+			background:black;
+			max-height: 0;
+	        opacity: 0;
+	        overflow: hidden;
+	        transition: max-height .25s ease-in-out, opacity .15s;
+
+			&.is-active {
+				opacity: 1;
+			}
+
+			.top-navbar {
+				height: 250px;
+			}
+
+			.header-nav-inner {
+				flex-direction: column;
+				// padding: $header-nav--padding-v__mobile;
+				width: 90%;
+
+				
+			}
+
+			.div-ul {
+				display: block;
+				text-align: center;
+
+				.header_first_group {
+					flex-direction: column;
+
+					.search-bar-li {
+						width: 100% !important;
+						.search-bar {
+							position: relative;
+							height: 30px;
+							width: 100%;
+						}
+					}
+				}
+
+				.header_second_group {
+					flex-direction: column;
+					.div-li {
+						width: 100%;
+					}
+
+					.last_two_btn {
+						flex-direction: column;
+
+						.mint_header {
+							text-align: center !important;
+							border: 1px solid red;
+							padding: 3px 40px 3px 40px !important;
+						}
+				
+						.connect-wallet {
+							margin-left: -0.5px !important;
+							font-size: 12px;
+							background: red;
+							font-weight: bold;
+							padding: 3px 40px 3px 40px !important;
+							text-align: center;
+							margin-left: 10px;
+							width: 100%;
+				
+							.connect-wallet-label {
+								color: black;
+							}
+						}
+					}
+
+
+				}
+
+				.div-li {
+					margin-top: 15px;
+					width: 100%;
+					.search-bar {
+						position: relative;
+						height: 30px;
+						width: 100%;
+					}
+				}
+
+			    a:not(.header_logo) {
+					// display: inline-flex;
+			        @include anchor-aspect(header-mobile);
+					// padding-top: $header-nav--padding-v__mobile / 2;
+					// padding-bottom: $header-nav--padding-v__mobile / 2;
+					color: red;
+					width: 100% !important;
+			    }
+
+				.header-logo-li {
+					display: none !important;
+				}
+
+				.header_second_group {
+
+					
+					.last_two_btn {
+						width: 100%;
+					}
+				}
+			}
+
+			a.header_logo {
+				margin-left: 0;
+				// margin-top: $header-nav--padding-v__mobile / 2;
+				margin-bottom: $header-nav--padding-v__mobile / 2;
+			}
+		}
+	}
+
+}
+
+
+.connect-wallet {
+	position: relative;
+    top: 0;
+    margin-top: 0;
+    box-shadow: 1px 2px 0.5px 0.5px rgba(255, 0, 0, 0.7);
+    display: block;
+    background: red;
+    color: #000;
+    // border: 1px solid #000;
+    cursor: pointer;
+}
+
+
+.connect-wallet:active {
+    /** Remove 3D Block Effect on Click **/
+    box-shadow: none;
+    top: 2px;
+    left:1px;
+    margin-bottom: 0;
+  }
+  
+  .connect-wallet:hover {
+    opacity: 1;
+  }
+  
+  .connect-wallet:active,
+  .connect-wallet:focus {
+    /** Remove Chrome's Ugly Yellow Outline **/
+    outline: 0;
+  }
+
+.dropdownshow {
+	display: show !important;
+	// box-shadow: 3px 3px grey;
+	border: 2px solid grey;
+	border-radius: 5px;
+	justify-content: center;
+	margin-top: -7px;
+    /* margin-right: 39px; */
+    margin-left: -100px;
+}
+
+.dropdownhide {
+	display: none !important;
+}

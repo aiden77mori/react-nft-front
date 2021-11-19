@@ -1,0 +1,53 @@
+.footer-copyright{
+    color:red;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.site-footer{
+    background-color: black;
+}
+
+.footer-area {
+    padding-top: 80px;
+    color: red;
+}
+
+.footer-area li {
+  margin-bottom: 10px;
+}
+
+.widget {
+    width:265px !important;
+    display: flex;
+}
+
+
+.widget a {
+	color: #DBDBDB;
+}
+
+.widget ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: c;
+}
+
+.widget ul li a {
+  -webkit-text-decoration: navajowhite;
+          text-decoration: navajowhite;
+  // margin-bottom: 20px;
+  margin-left: 7px;
+  color:red;
+}
+
+@include media( '<=medium' ) {
+
+    .widget {
+        min-width:300px;
+        margin-top: 10px;
+    }
+    
+}
