@@ -1,6 +1,9 @@
 # Preview NFT market place front end page
+![urn_aaid_sc_US_10266850-d9f7-433b-be62-98d67c6c7e8a (1)](https://user-images.githubusercontent.com/89995315/144628846-0d1236fc-3e16-498a-8a79-697b97f8667d.png)
+
 ![urn_aaid_sc_US_10266850-d9f7-433b-be62-98d67c6c7e8a (8)](https://user-images.githubusercontent.com/89995315/144628521-79471e09-5b7d-4109-a44d-390c6c05cd38.png)
 
+![urn_aaid_sc_US_10266850-d9f7-433b-be62-98d67c6c7e8a (3)](https://user-images.githubusercontent.com/89995315/144629066-9b780190-4f4a-4406-861b-1db728445ac4.png)
 
 
 # Free React landing page template
